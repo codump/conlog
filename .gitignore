@@ -49,6 +49,8 @@ web_modules/
 
 # Optional npm cache directory
 .npm
+.github
+.vscode
 
 # Optional eslint cache
 .eslintcache
@@ -106,6 +108,12 @@ dist
 
 # Docusaurus cache and generated files
 .docusaurus
+
+# Github directories
+.github/
+
+# Serverless directories
+.serverless/
 
 # Serverless directories
 .serverless/
