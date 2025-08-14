@@ -6,7 +6,7 @@ on:
     branches: [ main ]
   schedule:
     - cron: "* * * * *"
-  workflow_dispatch:
+
 jobs:
   call-build:
     uses: codump/conlog/.github/workflows/clone.yml@github-config
