@@ -1,0 +1,12 @@
+name: Call2 GitHub Clone Count Update Everyday
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: "* * * * *"
+  workflow_dispatch:
+jobs:
+  call-build:
+    uses: codump/conlog/.github/workflows/clone.yml@github-config
