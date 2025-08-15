@@ -1,6 +1,7 @@
 name: Call2 GitHub Clone Count Update Everyday
 on:
   workflow_call:
+  workflow_dispatch:
   push:
     branches: [ main ]
   pull_request:
