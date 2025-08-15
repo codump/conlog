@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/codump/conlog/issues"
   },
-  "homepage": "https://github.com/codump/conlog#readme"
+  "homepage": "https://github.com/codump/conlog#readme",
+  "publishConfig": {
+    "@codump:registry": "https://npm.pkg.github.com"
+  }
 }
