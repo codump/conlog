@@ -6,7 +6,7 @@ global._ConLogShowWar = true;
 global._ConLogShowObject = true;
 global._ConLogShowColors = true;
 
-exports.ConLogInit = require('./lib/ConLogInit');
-exports.ConLogSet = require('./lib/ConLogSet');
-exports.ConLogStartMsg = require('./lib/ConLogStartMsg');
-exports.ConLog = require('./lib/ConLog');
+exports.ConLogInit = require(`./lib/ConLogInit`);
+exports.ConLogSet = require(`./lib/ConLogSet`);
+exports.ConLog = require(`./lib/ConLog`);
+exports.ConLogStartMsg = require(`./lib/ConLogStartMsg`);

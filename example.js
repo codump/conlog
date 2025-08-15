@@ -1,35 +1,92 @@
-var { ConLogInit, ConLogStartMsg, ConLogSet, ConLog } = require('./lib/');
+/**
+ * ConLog - Console log management and utility tool
+ * 
+ * Replace this require statement with `require('@codump/conlog')` after installation or with usage
+ */
+const { ConLogInit, ConLogStartMsg, ConLogSet, ConLog } = require('./lib/');
+
+// ================================
+// INITIALIZATION
+// ================================
 
 /**
- * Default is set to true.
- * ConLogInit(false) // True = Show console logs / False = No console logs.
+ * Initialize ConLog with global enable/disable setting
+ * 
+ * @param {boolean} status - Master switch for all console logging
+ *   - true: Enable all ConLog output (default)
+ *   - false: Completely disable all ConLog output
  */
-ConLogInit(true)
+ConLogInit(true);
+
+// ================================
+// CONFIGURATION
+// ================================
 
 /**
- * By default everything is set to true, so you only need to set them when using false
- * ConLogSet(false, false, false, false, false) // True = show / False = hide: 1st param errors, 2nd param ok, 3rd param warning 4rd param object, 5th param colors
- * ConLog() with only 1 parameter set can only be disabled by turning ConLogInit to false.
+ * Configure which log types are displayed
+ * All parameters default to true, so you only need to specify false values
+ * When you want to set a value to false, you need to set all parameters in the function
+ * 
+ * @param {boolean} showErrors - Display error messages (type 1)
+ * @param {boolean} showSuccess - Display success/OK messages (type 2)  
+ * @param {boolean} showWarnings - Display warning messages (type 3)
+ * @param {boolean} showObjects - Display object dumps (type 4)
+ * @param {boolean} showColors - Enable colored console output
+ * 
+ * ConLogSet(showErrors, showSuccess, showWarnings, showObjects, showColors);
  */
-ConLogSet(true, true, true, true, true)
+ConLogSet(true, true, true, true, true);
 
 /**
- * By default ConLogStartMsg is already turned off with false, set to true if you want to check settings or want to be reassured ConLog is running on start up.  
+ * Display startup message showing current ConLog settings
+ * Useful for debugging or confirming ConLog is properly initialized
+ * 
+ * @param {boolean} status - Whether to display startup message (default: false)
  */
-ConLogStartMsg(true)
+ConLogStartMsg(true);
+
+// ================================
+// LOGGING EXAMPLES
+// ================================
 
 /**
- * /**
- * @param {(number|string)} type - 1|er|err|error / 2|ok / 3|wa|war|warn|warning / 4|so|ob|obj|object|showobject
- * @param {(string|object)} text - text or object to display
- * ConLog(type, text) 1st param is type (1 = Error, 2 = OK, 3 = Warning, 4 = Show object) of log, 2nd param is text or object to display.
- * Example: ConLog(1, `This is an error message`) OR ConLog(`error`, `This is also an error message`)
- * If you only use 1 param the log will default to no type and will display the given value. 
+ * Main logging function - ConLog(type, message)
+ * 
+ * TYPE OPTIONS:
+ * - Error:   1, 'er', 'err', 'error'
+ * - Success: 2, 'ok' 
+ * - Warning: 3, 'wa', 'war', 'warn', 'warning'
+ * - Object:  4, 'so', 'ob', 'obj', 'object', 'showobject'
+ * 
+ * USAGE:
+ * - ConLog(type, message) - Typed logging with formatting
+ * - ConLog(message) - Simple logging without type (always displayed unless ConLogInit is false)
  */
-const objIobj = [{nestedObj: "sd"}]
-const obj = [{test: "sd", nested: objIobj}]
-ConLog(1, `text1`)
-ConLog(2, `text2`)
-ConLog(3, `text3`)
-ConLog(4, obj)
-ConLog(`no type defined`)
+
+// Sample data for object logging
+const nestedData = [{ nestedObj: 'inside nested structure' }];
+const complexObject = [{ 
+    test: 'valid test data', 
+    nested: nestedData,
+    timestamp: new Date().toISOString()
+}];
+
+// Error logging - displayed in red
+ConLog(1, 'Database connection failed');
+ConLog('error', 'Example... Invalid user credentials provided');
+
+// Success logging - displayed in green
+ConLog(2, 'Example... User successfully authenticated');
+ConLog('ok', 'Example... File upload completed');
+
+// Warning logging - displayed in yellow with warning icon
+ConLog(3, 'Example... API rate limit approaching');
+ConLog('warning', 'Example... Deprecated function usage detected');
+
+// Object logging - formatted JSON display with syntax highlighting
+ConLog(4, complexObject);
+ConLog('object', { userId: 123, status: 'active', permissions: ['read', 'write'] });
+
+// Simple logging - no special formatting, always displayed (unless ConLogInit is false)
+ConLog('Example... Application started successfully');
+ConLog('Example... Processing user request...');
