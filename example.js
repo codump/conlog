@@ -89,3 +89,5 @@ ConLog(`object`, { userId: 123, status: `active`, permissions: [`read`, `write`]
 
 // Simple logging - no special formatting, always displayed (unless ConLogInit is false)
 ConLog(`Example... Processing user request...`)
+ConLog(0,`Example... Processing user request...`)
+ConLog(0)

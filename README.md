@@ -48,6 +48,7 @@ const { ConLogInit, ConLogSet, ConLog, ConLogStartMsg } = require(`@codump/conlo
  * @param {boolean} status - Master switch for all console logging
  *   - true: Enable all ConLog output (default)
  *   - false: Completely disable all ConLog output
+ *   - Every ConLog after ConLogInit(false) stops working
  */
 ConLogInit(true)
 
