@@ -1,1 +1,1 @@
-# `ConLog` console logging management and utility tool
+# `ConLog()` console logging management and utility tool
