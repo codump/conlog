@@ -1,3 +1,2 @@
 # `ConLog()` console logging management and utility tool
-[![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/kipBO/6d2bb29f973d5b61cae5b6c3b174f8bf/raw/clone.json&logo=github)](https://github.com/MShawon/github-clone-count-badge)
-![npm v](https://badgen.net/npm/v/@codump/conlog) ![dep](https://badgen.net/static/dependencies/0/green)
+![npm v](https://badgen.net/npm/v/@codump/conlog) [![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clones&query=count&url=https://gist.githubusercontent.com/kipBO/6d2bb29f973d5b61cae5b6c3b174f8bf/raw/clone.json&logo=github)] ![dep](https://badgen.net/static/dependencies/0/green)
