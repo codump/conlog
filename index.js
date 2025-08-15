@@ -1,12 +1,11 @@
-global._ConLogActive = true;
-global._ConLogStartMsg = false;
-global._ConLogShowErr = true;
-global._ConLogShowOk = true;
-global._ConLogShowWar = true;
-global._ConLogShowObject = true;
-global._ConLogShowColors = true;
+global.$ConLogActive = true
+global.$ConLogShowOk = true
+global.$ConLogShowWar = true
+global.$ConLogShowObject = true
+global.$ConLogShowColors = true
+global.$ConLogStartMsg = false
 
-exports.ConLogInit = require(`./lib/ConLogInit`);
-exports.ConLogSet = require(`./lib/ConLogSet`);
-exports.ConLog = require(`./lib/ConLog`);
-exports.ConLogStartMsg = require(`./lib/ConLogStartMsg`);
+exports.ConLogInit = require(`./lib/ConLogInit`)
+exports.ConLogSet = require(`./lib/ConLogSet`)
+exports.ConLog = require(`./lib/ConLog`)
+exports.ConLogStartMsg = require(`./lib/ConLogStartMsg`)

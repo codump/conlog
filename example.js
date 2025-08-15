@@ -1,9 +1,9 @@
 /**
  * ConLog - Console log management and utility tool
  * 
- * Replace this require statement with `require('@codump/conlog')` after installation or with usage
+ * Replace this require statement with require(`@codump/conlog`) after installation or with usage
  */
-const { ConLogInit, ConLogStartMsg, ConLogSet, ConLog } = require('./lib/');
+const { ConLogInit, ConLogSet, ConLog, ConLogStartMsg } = require(`./lib/`)
 
 // ================================
 // INITIALIZATION
@@ -16,7 +16,7 @@ const { ConLogInit, ConLogStartMsg, ConLogSet, ConLog } = require('./lib/');
  *   - true: Enable all ConLog output (default)
  *   - false: Completely disable all ConLog output
  */
-ConLogInit(true);
+ConLogInit(true)
 
 // ================================
 // CONFIGURATION
@@ -35,7 +35,7 @@ ConLogInit(true);
  * 
  * ConLogSet(showErrors, showSuccess, showWarnings, showObjects, showColors);
  */
-ConLogSet(true, true, true, true, true);
+ConLogSet(true, true, true, true, true)
 
 /**
  * Display startup message showing current ConLog settings
@@ -43,7 +43,7 @@ ConLogSet(true, true, true, true, true);
  * 
  * @param {boolean} status - Whether to display startup message (default: false)
  */
-ConLogStartMsg(true);
+ConLogStartMsg(true)
 
 // ================================
 // LOGGING EXAMPLES
@@ -53,10 +53,10 @@ ConLogStartMsg(true);
  * Main logging function - ConLog(type, message)
  * 
  * TYPE OPTIONS:
- * - Error:   1, 'er', 'err', 'error'
- * - Success: 2, 'ok' 
- * - Warning: 3, 'wa', 'war', 'warn', 'warning'
- * - Object:  4, 'so', 'ob', 'obj', 'object', 'showobject'
+ * - Error:   1, `er`, `err`, `error`
+ * - Success: 2, `ok` 
+ * - Warning: 3, `wa`, `war`, `warn`, `warning`
+ * - Object:  4, `so`, `ob`, `obj`, `object`, `showobject`
  * 
  * USAGE:
  * - ConLog(type, message) - Typed logging with formatting
@@ -64,29 +64,28 @@ ConLogStartMsg(true);
  */
 
 // Sample data for object logging
-const nestedData = [{ nestedObj: 'inside nested structure' }];
+const nestedData = [{ nestedObj: `inside nested structure` }]
 const complexObject = [{ 
-    test: 'valid test data', 
+    test: `valid test data`, 
     nested: nestedData,
     timestamp: new Date().toISOString()
 }];
 
 // Error logging - displayed in red
-ConLog(1, 'Database connection failed');
-ConLog('error', 'Example... Invalid user credentials provided');
+ConLog(1, `Example... Database connection failed.`)
+ConLog(`error`, `Example... Invalid user credentials provided.`)
 
 // Success logging - displayed in green
-ConLog(2, 'Example... User successfully authenticated');
-ConLog('ok', 'Example... File upload completed');
+ConLog(2, `Example... User successfully authenticated.`)
+ConLog(`ok`, `Example... File upload completed.`)
 
 // Warning logging - displayed in yellow with warning icon
-ConLog(3, 'Example... API rate limit approaching');
-ConLog('warning', 'Example... Deprecated function usage detected');
+ConLog(3, `Example... API rate limit approaching.`)
+ConLog(`warning`, `Example... Deprecated function usage detected.`)
 
-// Object logging - formatted JSON display with syntax highlighting
-ConLog(4, complexObject);
-ConLog('object', { userId: 123, status: 'active', permissions: ['read', 'write'] });
+// Object logging - formatted JSON display
+ConLog(4, complexObject)
+ConLog(`object`, { userId: 123, status: `active`, permissions: [`read`, `write`] })
 
 // Simple logging - no special formatting, always displayed (unless ConLogInit is false)
-ConLog('Example... Application started successfully');
-ConLog('Example... Processing user request...');
+ConLog(`Example... Processing user request...`)
