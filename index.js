@@ -9,4 +9,4 @@ global._ConLogShowColors = true;
 exports.ConLogInit = require('./lib/ConLogInit');
 exports.ConLogStartMsg = require('./lib/ConLogStartMsg');
 exports.ConLogSet = require('./lib/ConLogSet');
-exports.ConLog = require('./lib/ConLog'); 
+exports.ConLog = require('./lib/ConLog');
