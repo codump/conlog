@@ -1,7 +1,9 @@
 # `ConLog()` console log management and utility tool
-![npm v](https://badgen.net/npm/v/@codump/conlog) ![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clones&query=count&url=https://gist.githubusercontent.com/kipBO/6d2bb29f973d5b61cae5b6c3b174f8bf/raw/clone.json&logo=github) ![dependencies](https://badgen.net/static/dependencies/0/green)
+### ![dependencies](https://badgen.net/static/dependencies/0/green) <sup>👈🥳</sup> ![npm v](https://badgen.net/npm/v/@codump/conlog) ![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clones&query=count&url=https://gist.githubusercontent.com/kipBO/6d2bb29f973d5b61cae5b6c3b174f8bf/raw/clone.json&logo=github) 
 
-## Minimal to go
+## Run `npm install @codump/conlog`
+
+## Minimal to go:
 ```js
 const { ConLog, ConLogStartMsg } = require(`@codump/conlog`)
 /**
@@ -20,21 +22,21 @@ ConLog(2, `Confirm! Type 2 => ok in console`);
  */
 ```
 
-## For real this time
+## For real this time:
 ```js
 const { ConLog } = require(`@codump/conlog`)
 
 ConLog(1, `Sorry! Hope I didn't upset you again with an error!?`);
 ```
 
-## Let's check the example
+## Let's check the full deal:
 ```js
 /**
  * ConLog - Console log management and utility tool
  * 
- * Replace this require statement with require(`@codump/conlog`) after installation or with usage
+ * In the repo example.js it's set to require(`./lib/`) but copy paste the code below
  */
-const { ConLogInit, ConLogSet, ConLog, ConLogStartMsg } = require(`./lib/`)
+const { ConLogInit, ConLogSet, ConLog, ConLogStartMsg } = require(`@codump/conlog`)
 
 // ================================
 // INITIALIZATION
