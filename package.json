@@ -1,0 +1,29 @@
+{
+  "name": "conlog",
+  "version": "0.0.1",
+  "description": "console logging management and utility tool",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codump/conlog.git"
+  },
+  "keywords": [
+    "console",
+    "logging",
+    "management",
+    "utility",
+    "tool"
+  ],
+  "author": "Codump",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codump/conlog/issues"
+  },
+  "homepage": "https://github.com/codump/conlog#readme"
+}

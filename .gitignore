@@ -56,6 +56,7 @@ web_modules/
 .npm
 .github
 .vscode
+*.code-workspace
 
 # Optional eslint cache
 .eslintcache
