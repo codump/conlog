@@ -1,3 +1,10 @@
+# Project defaults
+.npm
+.github
+.vscode
+*.code-workspace
+local-ignore
+
 # Logs
 logs
 *.log
@@ -5,11 +12,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
-
-1test
-2test
-3test
-4test
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -51,12 +53,6 @@ web_modules/
 
 # TypeScript cache
 *.tsbuildinfo
-
-# Optional npm cache directory
-.npm
-.github
-.vscode
-*.code-workspace
 
 # Optional eslint cache
 .eslintcache
