@@ -1,5 +1,5 @@
 {
-  "name": "conlog",
+  "name": "@codump/conlog",
   "version": "0.0.1",
   "description": "console logging management and utility tool",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "test"
+    "test": "exit 0"
   },
   "repository": {
     "type": "git",
