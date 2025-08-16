@@ -1,7 +1,7 @@
 # `ConLog()` console log management and utility tool
 ### ![dependencies](https://badgen.net/static/dependencies/0/green) <sup>👈🥳</sup> ![npm v](https://badgen.net/npm/v/@codump/conlog) ![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clones&query=count&url=https://gist.githubusercontent.com/kipBO/6d2bb29f973d5b61cae5b6c3b174f8bf/raw/clone.json&logo=github) ![npm downloads](https://badgen.net/npm/dt/@codump/conlog) ![last commit](https://badgen.net/github/last-commit/codump/conlog) 
 
-## Run `npm install @codump/conlog`
+## Run `npm i @codump/conlog`
 
 > [!WARNING]
 > Breaking update `v0.2.0-beta.1` August 16th 2025 [CHANGELOG](https://github.com/codump/conlog/blob/main/CHANGELOG.md).
