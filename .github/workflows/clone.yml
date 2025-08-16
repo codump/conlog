@@ -12,5 +12,4 @@ on:
 jobs:
   call-build:
     uses: codump/conlog/.github/workflows/clone.yml@github-config
-    secrets:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    secrets: inherit
