@@ -2,24 +2,29 @@
 ### ![dependencies](https://badgen.net/static/dependencies/0/green) <sup>👈🥳</sup> ![npm v](https://badgen.net/npm/v/@codump/conlog) ![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clones&query=count&url=https://gist.githubusercontent.com/kipBO/6d2bb29f973d5b61cae5b6c3b174f8bf/raw/clone.json&logo=github) ![npm downloads](https://badgen.net/npm/dt/@codump/conlog) ![last commit](https://badgen.net/github/last-commit/codump/conlog) 
 
 ## Run `npm install @codump/conlog`
-**16th August 2025 `v0.2.0-beta.1` [BREAKING] https://github.com/codump/conlog/blob/main/CHANGELOG.md**
+**16th August 2025 `v0.2.0-beta.1` [BREAKING] [Changelog](https://github.com/codump/conlog/blob/main/CHANGELOG.md)**
 
 ## Minimal to go:
 ```js
-const { ConLog, ConLogStartMsg } = require(`@codump/conlog`)
+const { ConLog, ConLogStartMsg } = require('@codump/conlog')
+
 /**
- * It's so minimal that you can remove this, but do it after your settings
- * Because the start message that shows your settings will vanish 
- * You can also remove the ConLogStartMsg function from the require
+ * This is so minimal you can even remove it, just do that *after* setting things up.
+ * Otherwise the startup message (that shows your settings) won't appear.
+ * You can also drop ConLogStartMsg from the import if you don't need it.
  */
 ConLogStartMsg(true)
+
 /**
- * Here's the `core` feature ConLog() it's that easy!
+ * And here's the core feature:
+ * ConLog() that's it, that simple!
  */
-ConLog(`Confirm! Type 2 => ok in console`, 2);
+ConLog('Confirm! Type 2 => ok in console', 2)
+
 /**
- * Sorry for the troll, the real minimal is below but we need to take care of the newbies
- * Cliffhanger... Might add some syntax highlighter to object...🤞
+ * Okay I trolled a bit earlier, the real minimal example is even shorter.
+ * But we’re looking out for newcomers here
+ * Cliffhanger... maybe next time we'll throw in syntax highlighting for objects 🤞
  */
 ```
 
