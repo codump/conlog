@@ -43,7 +43,7 @@ ConLog(`Sorry! Hope I didn't upset you again with an error!?`, 1);
  * ConLog - Console log management and utility tool
  * 
  * In the repo example.js is set with require(`./lib/`) but copy paste the code below
- * for you usages after a `npm install @codump/conlog`
+ * when you use it after a `npm install @codump/conlog`
  */
 const { ConLogInit, ConLogSet, ConLog, ConLogStartMsg } = require(`@codump/conlog`)
 
