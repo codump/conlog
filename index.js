@@ -3,7 +3,7 @@ global.$ConLogShowOk = true
 global.$ConLogShowWar = true
 global.$ConLogShowObject = true
 global.$ConLogShowColors = true
-global.$ConLogStartMsg = false
+global.$ConLogStartMsg = false 
 
 exports.ConLogInit = require(`./lib/ConLogInit`)
 exports.ConLogSet = require(`./lib/ConLogSet`)

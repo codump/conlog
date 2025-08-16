@@ -1,5 +1,5 @@
 # `ConLog()` console log management and utility tool
-### ![dependencies](https://badgen.net/static/dependencies/0/green) <sup>👈🥳</sup> ![npm v](https://badgen.net/npm/v/@codump/conlog) ![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clones&query=count&url=https://gist.githubusercontent.com/kipBO/6d2bb29f973d5b61cae5b6c3b174f8bf/raw/clone.json&logo=github) 
+### ![dependencies](https://badgen.net/static/dependencies/0/green) <sup>👈🥳</sup> ![npm v](https://badgen.net/npm/v/@codump/conlog) ![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clones&query=count&url=https://gist.githubusercontent.com/kipBO/6d2bb29f973d5b61cae5b6c3b174f8bf/raw/clone.json&logo=github) ![npm downloads](https://badgen.net/npm/dt/@codump/conlog) 
 
 ## Run `npm install @codump/conlog`
 
@@ -84,7 +84,7 @@ ConLogStartMsg(true)
 // ================================
 
 /**
- * Main logging function - ConLog(type, message)
+ * Main logging function - ConLog(text, type)
  * 
  * TYPE OPTIONS:
  * - Error:   1, `er`, `err`, `error`
@@ -93,8 +93,8 @@ ConLogStartMsg(true)
  * - Object:  4, `so`, `ob`, `obj`, `object`, `showobject`
  * 
  * USAGE:
- * - ConLog(type, message) - Typed logging with formatting
- * - ConLog(message) - Simple logging without type (always displayed unless ConLogInit is false)
+ * - ConLog(text, type) - Typed logging with formatting
+ * - ConLog(text) - Simple logging without type (always displayed unless ConLogInit is false)
  */
 
 // Sample data for object logging

@@ -50,7 +50,7 @@ ConLogStartMsg(true)
 // ================================
 
 /**
- * Main logging function - ConLog(type, message)
+ * Main logging function - ConLog(text, type)
  * 
  * TYPE OPTIONS:
  * - Error:   1, `er`, `err`, `error`
@@ -59,8 +59,8 @@ ConLogStartMsg(true)
  * - Object:  4, `so`, `ob`, `obj`, `object`, `showobject`
  * 
  * USAGE:
- * - ConLog(type, message) - Typed logging with formatting
- * - ConLog(message) - Simple logging without type (always displayed unless ConLogInit is false)
+ * - ConLog(text, type) - Typed logging with formatting
+ * - ConLog(text) - Simple logging without type (always displayed unless ConLogInit is false)
  */
 
 // Sample data for object logging
@@ -72,22 +72,21 @@ const complexObject = [{
 }];
 
 // Error logging - displayed in red
-ConLog(1, `Example... Database connection failed.`)
-ConLog(`error`, `Example... Invalid user credentials provided.`)
+ConLog(`Example... Database connection failed.`, 1)
+ConLog(`Example... Invalid user credentials provided.`, `error`)
 
 // Success logging - displayed in green
-ConLog(2, `Example... User successfully authenticated.`)
-ConLog(`ok`, `Example... File upload completed.`)
+ConLog(`Example... User successfully authenticated.`, 2)
+ConLog(`Example... File upload completed.`,`ok`)
 
 // Warning logging - displayed in yellow with warning icon
-ConLog(3, `Example... API rate limit approaching.`)
-ConLog(`warning`, `Example... Deprecated function usage detected.`)
+ConLog(`Example... API rate limit approaching.`, 3)
+ConLog(`Example... Deprecated function usage detected.`, `warning`)
 
 // Object logging - formatted JSON display
-ConLog(4, complexObject)
-ConLog(`object`, { userId: 123, status: `active`, permissions: [`read`, `write`] })
+ConLog(complexObject, 4)
+ConLog({ userId: 123, status: `active`, permissions: [`read`, `write`] }, `object`)
 
 // Simple logging - no special formatting, always displayed (unless ConLogInit is false)
 ConLog(`Example... Processing user request...`)
-ConLog(0,`Example... Processing user request...`)
-ConLog(0)
+ConLog(`Example... Processing user request...`, 0)
