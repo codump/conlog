@@ -33,7 +33,7 @@ ConLogInit(true)
  * @param {boolean} showObjects - Display object dumps (type 4)
  * @param {boolean} showColors - Enable colored console output
  * 
- * ConLogSet(showErrors, showSuccess, showWarnings, showObjects, showColors);
+ * ConLogSet(showErrors, showSuccess, showWarnings, showObjects, showColors)
  */
 ConLogSet(true, true, true, true, true)
 
