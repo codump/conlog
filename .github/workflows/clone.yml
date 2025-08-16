@@ -75,7 +75,7 @@ jobs:
             ```
 
             **HTML**
-            ```html' >>.github/ CLONE.md
+            ```html' >> .github/CLONE.md
             echo "<a href='$repo'><img alt='GitHub Clones' src='$shields$url&logo=github'></a>" >> .github/CLONE.md
             echo '```' >> .github/CLONE.md
             
