@@ -4,7 +4,7 @@
 ## Run `npm install @codump/conlog`
 
 > [!WARNING]
-> Breaking update `v0.2.0-beta.1` 16th August 2025 [CHANGELOG](https://github.com/codump/conlog/blob/main/CHANGELOG.md).
+> Breaking update `v0.2.0-beta.1` August 16th 2025 [CHANGELOG](https://github.com/codump/conlog/blob/main/CHANGELOG.md).
 
 ## Minimal to go:
 ```js
@@ -42,7 +42,8 @@ ConLog(`Sorry! Hope I didn't upset you again with an error!?`, 1);
 /**
  * ConLog - Console log management and utility tool
  * 
- * In the repo example.js it's set to require(`./lib/`) but copy paste the code below
+ * In the repo example.js is set with require(`./lib/`) but copy paste the code below
+ * for you usages after a `npm install @codump/conlog`
  */
 const { ConLogInit, ConLogSet, ConLog, ConLogStartMsg } = require(`@codump/conlog`)
 
