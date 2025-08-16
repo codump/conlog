@@ -89,4 +89,3 @@ ConLog({ userId: 123, status: `active`, permissions: [`read`, `write`] }, `objec
 
 // Simple logging - no special formatting, always displayed (unless ConLogInit is false)
 ConLog(`Example... Processing user request...`)
-ConLog(`Example... Processing user request...`, 0)

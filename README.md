@@ -15,7 +15,7 @@ ConLogStartMsg(true)
 /**
  * Here's the `core` feature ConLog() it's that easy!
  */
-ConLog(2, `Confirm! Type 2 => ok in console`);
+ConLog(`Confirm! Type 2 => ok in console`, 2);
 /**
  * Sorry for the troll, the real minimal is below but we need to take care of the newbies
  * Cliffhanger... Might add some syntax highlighter to object...🤞
@@ -26,7 +26,7 @@ ConLog(2, `Confirm! Type 2 => ok in console`);
 ```js
 const { ConLog } = require(`@codump/conlog`)
 
-ConLog(1, `Sorry! Hope I didn't upset you again with an error!?`);
+ConLog(`Sorry! Hope I didn't upset you again with an error!?`, 1);
 ```
 
 ## Let's check the full deal:
@@ -105,21 +105,21 @@ const complexObject = [{
     timestamp: new Date().toISOString()
 }];
 
-// Error logging - displayed in red
-ConLog(1, `Example... Database connection failed.`)
-ConLog(`error`, `Example... Invalid user credentials provided.`)
+/ Error logging - displayed in red
+ConLog(`Example... Database connection failed.`, 1)
+ConLog(`Example... Invalid user credentials provided.`, `error`)
 
 // Success logging - displayed in green
-ConLog(2, `Example... User successfully authenticated.`)
-ConLog(`ok`, `Example... File upload completed.`)
+ConLog(`Example... User successfully authenticated.`, 2)
+ConLog(`Example... File upload completed.`,`ok`)
 
 // Warning logging - displayed in yellow with warning icon
-ConLog(3, `Example... API rate limit approaching.`)
-ConLog(`warning`, `Example... Deprecated function usage detected.`)
+ConLog(`Example... API rate limit approaching.`, 3)
+ConLog(`Example... Deprecated function usage detected.`, `warning`)
 
 // Object logging - formatted JSON display
-ConLog(4, complexObject)
-ConLog(`object`, { userId: 123, status: `active`, permissions: [`read`, `write`] })
+ConLog(complexObject, 4)
+ConLog({ userId: 123, status: `active`, permissions: [`read`, `write`] }, `object`)
 
 // Simple logging - no special formatting, always displayed (unless ConLogInit is false)
 ConLog(`Example... Processing user request...`)
