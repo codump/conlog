@@ -4,7 +4,7 @@
 ## Run `npm install @codump/conlog`
 
 > [!WARNING]
-> [BREAKING] Updaye 16th August 2025 `v0.2.0-beta.1` [Changelog](https://github.com/codump/conlog/blob/main/CHANGELOG.md)
+> Breaking update `v0.2.0-beta.1` 16th August 2025 [CHANGELOG](https://github.com/codump/conlog/blob/main/CHANGELOG.md).
 
 ## Minimal to go:
 ```js
