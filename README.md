@@ -23,7 +23,7 @@ ConLog('Confirm! Type 2 => ok in console', 2)
 
 /**
  * Okay I trolled a bit earlier, the real minimal example is even shorter.
- * But we’re looking out for newcomers here
+ * But we’re looking out for newcomers here so please forgive me
  * Cliffhanger... maybe next time we'll throw in syntax highlighting for objects 🤞
  */
 ```
