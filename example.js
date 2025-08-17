@@ -37,7 +37,6 @@ ConLogInit(true)
  */
 ConLogSet({error: true, ok: true, warning: true, object: true, color: true})
 
-
 /**
  * Display startup message showing current ConLog settings
  * Useful for debugging or confirming ConLog is properly initialized

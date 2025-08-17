@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file(hopefully).
 
+## `v2.0.2` 17th August 2025
+### Fixed
+- Double vscode option. 🤞
+
 ## `v2.0.1` 17th August 2025 [BREAKING]
 ### Changed
 - Module export.
