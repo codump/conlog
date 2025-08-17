@@ -25,17 +25,15 @@ ConLogInit(true)
 /**
  * Configure which log types are displayed
  * All parameters default to true, so you only need to specify false values
- * When you want to set a value to false, you need to set all parameters in the function
  * 
- * @param {boolean} showErrors - Display error messages (type 1)
- * @param {boolean} showSuccess - Display success/OK messages (type 2)  
- * @param {boolean} showWarnings - Display warning messages (type 3)
- * @param {boolean} showObjects - Display object dumps (type 4)
- * @param {boolean} showColors - Enable colored console output
+ * @param {boolean} error - Display error messages (type 1)
+ * @param {boolean} ok - Display success/OK messages (type 2)  
+ * @param {boolean} warning - Display warning messages (type 3)
+ * @param {boolean} object - Display object dumps (type 4)
+ * @param {boolean} color - Enable colored console output
  * 
- * ConLogSet(showErrors, showSuccess, showWarnings, showObjects, showColors)
  */
-ConLogSet(true, true, true, true, true)
+ConLogSet({error: true, ok: true, warning: true, object: true, color: true})
 
 /**
  * Display startup message showing current ConLog settings
@@ -57,6 +55,7 @@ ConLogStartMsg(true)
  * - Success: 2, `ok` 
  * - Warning: 3, `wa`, `war`, `warn`, `warning`
  * - Object:  4, `so`, `ob`, `obj`, `object`, `showobject`
+ *   - Gives a stringify to the output. Don't set any type if you want to log the raw object. 
  * 
  * USAGE:
  * - ConLog(text, type) - Typed logging with formatting
@@ -86,6 +85,8 @@ ConLog(`Example... Deprecated function usage detected.`, `warning`)
 // Object logging - formatted JSON display
 ConLog(complexObject, 4)
 ConLog({ userId: 123, status: `active`, permissions: [`read`, `write`] }, `object`)
+// Object logging - unformatted
+ConLog(complexObject)
 
 // Simple logging - no special formatting, always displayed (unless ConLogInit is false)
 ConLog(`Example... Processing user request...`)
