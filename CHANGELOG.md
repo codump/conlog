@@ -1,6 +1,16 @@
 # Changelog
 All notable changes to this project will be documented in this file(hopefully).
 
+## `v2.0.1` 17th August 2025 [BREAKING]
+### Changed
+- Module export.
+
+### Fixed
+- Fixed missing `$ConLogShowErr`.
+
+### Added
+- How to use in frontend. [README](https://github.com/codump/conlog#how-to-use-in-frontend)
+
 ## `v1.0.1` 17th August 2025 [RELEASE]
 ### Changed
 - The way settings are used has been rebuild. `ConLogSet(true, true, true, true, true)` becomes `ConLogSet({error: true, ok: true, warning: true, object: true, color: true})`. This way you can now target a setting, without needing to set them all `ConLogSet({error: false})`. 

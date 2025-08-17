@@ -1,4 +1,5 @@
 global.$ConLogActive = true
+global.$ConLogShowErr = true
 global.$ConLogShowOk = true
 global.$ConLogShowWar = true
 global.$ConLogShowObject = true

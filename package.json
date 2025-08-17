@@ -1,6 +1,6 @@
 {
   "name": "@codump/conlog",
-  "version": "1.0.1",
+  "version": "2.0.1",
   "description": "console log management and utility tool",
   "main": "index.js",
   "directories": {

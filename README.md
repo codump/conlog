@@ -4,7 +4,7 @@
 ## Run `npm i @codump/conlog`
 
 > [!IMPORTANT]
-> We just released v1.0.1. Do note it has some breaking changes if you used previous versions.
+> We just released v**2**.0.1. Do note it has some breaking changes if you used previous versions.
 
 ## Minimal to go:
 ```js
@@ -37,7 +37,20 @@ const { ConLog } = require(`@codump/conlog`)
 ConLog(`Sorry! Hope I didn't upset you again with an error!?`, 1);
 ```
 
-## Let's check the full deal:
+## How to use in frontend:
+`ConLog()` works in both back- and frontend. We can use the ESM>CDN to import it to the front with zero install needed! Browser needs to support ES6. 
+```js
+// script.js
+import { ConLog } from `https://esm.sh/@codump/conlog`
+
+ConLog(`It's the same as in the backend, all details are below.`, 2);
+```
+Make sure the script where you are importing it has the module type.
+```html
+<script type='module' src='script.js'></script>
+```
+
+## Let's check the full details:
 ```js
 /**
  * ConLog - Console log management and utility tool
