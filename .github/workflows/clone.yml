@@ -93,3 +93,4 @@ jobs:
         with:
           branch: github-config   # 👈 explicitly push to github-config
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
