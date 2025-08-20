@@ -1,13 +1,14 @@
 {
   "name": "@codump/conlog",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "console log management and utility tool",
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "test": "exit 0"
+    "test": "exit 0",
+    "jsdoc": "jsdoc -a all -c jsdoc.json -r -R docs/DOCHOME.md lib/ -d docs"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/codump/conlog/issues"
   },
-  "homepage": "https://github.com/codump/conlog#readme"
+  "homepage": "https://github.com/codump/conlog#readme",
+  "devDependencies": {
+    "clean-jsdoc-theme": "^4.3.0",
+    "jsdoc": "^4.0.4"
+  }
 }

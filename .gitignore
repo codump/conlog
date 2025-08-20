@@ -4,6 +4,11 @@
 .vscode
 *.code-workspace
 local-ignore
+demo
+
+# JSDoc
+docs
+jsdoc.json
 
 # Logs
 logs
