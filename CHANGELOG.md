@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file(hopefully).
 
+## `v2.0.5` 20th August 2025
+### Fixed
+- No type default coloring.
+
 ## `v2.0.4` 20th August 2025
 ### Fixed
 - Removed wrong placed `global.`.

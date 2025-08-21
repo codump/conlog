@@ -4,7 +4,7 @@
 ## Run `npm i @codump/conlog`
 
 > [!IMPORTANT]
-> We just released v2.0.4. Do note it has some breaking changes if you used previous v1.x.x.
+> We just released v2.0.5. Do note it has some breaking changes if you used previous v1.x.x.
 
 ## Minimal to go:
 ```js
@@ -26,7 +26,6 @@ ConLog('Confirm! Type 2 => ok in console', 2)
 /**
  * Okay I trolled a bit earlier, the real minimal example is even shorter.
  * But we’re looking out for newcomers here so please forgive me
- * Cliffhanger... maybe next time we'll throw in syntax highlighting for objects 🤞
  */
 ```
 
