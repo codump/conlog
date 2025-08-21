@@ -4,7 +4,7 @@
 ## Run `npm i @codump/conlog`
 
 > [!IMPORTANT]
-> We just released v2.0.5. Do note it has some breaking changes if you used previous v1.x.x.
+> We just released v2.0.6. Do note it has some breaking changes if you used previous v1.x.x.
 
 ## Minimal to go:
 ```js
