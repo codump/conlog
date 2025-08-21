@@ -1,6 +1,6 @@
 <img src="https://codump.github.io/conlog/logo.svg" width="100%" />
 
-# Console log management and utility tool
+# JavaScript console log management and utility tool
 ### ![dependencies](https://badgen.net/static/dependencies/0/green?cache-control=no-cache) <sup>👈🥳</sup> ![npm v](https://badgen.net/npm/v/@codump/conlog?cache-control=no-cache) ![GitHub Clones](https://img.shields.io/badge/dynamic/json?color=success&label=Clones&cache-control=no-cache&query=count&url=https://gist.githubusercontent.com/kipBO/6d2bb29f973d5b61cae5b6c3b174f8bf/raw/clone.json&logo=github) ![npm downloads](https://badgen.net/npm/dt/@codump/conlog?cache-control=no-cache) ![last commit](https://badgen.net/github/last-commit/codump/conlog?cache-control=no-cache) 
 
 ## Run `npm i @codump/conlog`
