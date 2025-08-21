@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file(hopefully).
 
+## `v2.0.8` 21th August 2025
+### Fixed
+- Frontend start message coloring, try 2. 🤞
+
+### Added
+- Website with demo and documentation! [https://codump.github.io/conlog/](https://codump.github.io/conlog/)
+
 ## `v2.0.7` 21th August 2025
 ### Fixed
 - Frontend start message coloring.

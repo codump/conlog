@@ -3,8 +3,8 @@
 
 ## Run `npm i @codump/conlog`
 
-> [!IMPORTANT]
-> We just released v2.0.7. Do note it has some breaking changes if you used previous v1.x.x.
+> [!TIP]
+> We are launching our website with demo and documentation! [https://codump.github.io/conlog/](https://codump.github.io/conlog/)
 
 ## Minimal to go:
 ```js
