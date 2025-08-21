@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file(hopefully).
 
+## `v2.0.7` 21th August 2025
+### Fixed
+- Frontend start message coloring.
+
 ## `v2.0.6` 21th August 2025
 ### Fixed
 - No type default coloring, try 2.
