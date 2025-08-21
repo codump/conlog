@@ -26,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/codump/conlog/issues"
   },
-  "homepage": "https://github.com/codump/conlog#readme",
+  "homepage": "https://codump.github.io/conlog/",
   "devDependencies": {
     "clean-jsdoc-theme": "^4.3.0",
     "jsdoc": "^4.0.4"
