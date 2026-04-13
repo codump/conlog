@@ -5,7 +5,7 @@
  * 
  * Replace this require statement with require(`@codump/conlog`) after installation or with usage
  */
-const { ConLogInit, ConLogSet, ConLog, ConLogStartMsg } = require(`./lib/`)
+const { ConLogInit, ConLogSet, ConLogWebhook, ConLog, ConLogStartMsg } = require(`./lib/`)
 
 // ================================
 // INITIALIZATION
@@ -44,6 +44,23 @@ ConLogSet({error: true, ok: true, warning: true, object: true, color: true})
  * @param {boolean} status - Whether to display startup message (default: false)
  */
 ConLogStartMsg(true)
+
+/**
+ * Webhooks are now supported to send your critical logs to your preffered platform.
+ * 
+ * @param {boolean} status - Enable or disable webhook logging
+ *   - true: Enable all ConLog output to the specified webhook URL
+ *   - false: Completely disable all ConLog output to webhooks (default)
+ * @param {string} provider - The webhook provider (e.g., "discord")
+ * @param {string} url - The webhook URL to send messages to
+ * 
+ * Supported hook providers: only discord for now, but let us know if you want another one to be added.
+ * It configures automatically to your `ConLogSet()` settings.
+ * To overwrite and send a hook even when ConLogInit is turned off.
+ * Have `ConLogWebhook()` set and `force-hook` in your message.
+ */
+ConLogWebhook(true, `discord`, `https://discord.com/api/webhooks/your-hook`)
+ConLog(`force-hook This message will be send to your discord webhook.`)
 
 // ================================
 // LOGGING EXAMPLES

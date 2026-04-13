@@ -1,6 +1,6 @@
 {
   "name": "@codump/conlog",
-  "version": "2.0.8",
+  "version": "2.1.1",
   "description": "console log management and utility tool",
   "main": "index.js",
   "directories": {
@@ -19,7 +19,10 @@
     "logging",
     "management",
     "utility",
-    "tool"
+    "tool",
+    "javascript",
+    "jsdoc",
+    "node.js"
   ],
   "author": "Codump",
   "license": "ISC",

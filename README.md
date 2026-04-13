@@ -59,7 +59,7 @@ Make sure the script where you are importing it has the module type.
  * In the repo example.js is set with require(`./lib/`) but copy paste the code below
  * when you use it after a `npm install @codump/conlog`
  */
-const { ConLogInit, ConLogSet, ConLog, ConLogStartMsg } = require(`@codump/conlog`)
+const { ConLogInit, ConLogSet, ConLogWebhook, ConLog, ConLogStartMsg } = require(`@codump/conlog`)
 
 // ================================
 // INITIALIZATION
@@ -100,6 +100,23 @@ ConLogSet({error: true, ok: true, warning: true, object: true, color: true})
  */
 ConLogStartMsg(true)
 
+/**
+ * Webhooks are now supported to send your critical logs to your preffered platform.
+ * 
+ * @param {boolean} status - Enable or disable webhook logging
+ *   - true: Enable all ConLog output to the specified webhook URL
+ *   - false: Completely disable all ConLog output to webhooks (default)
+ * @param {string} provider - The webhook provider (e.g., "discord")
+ * @param {string} url - The webhook URL to send messages to
+ * 
+ * Supported hook providers: only discord for now, but let us know if you want another one to be added.
+ * It configures automatically to your `ConLogSet()` settings.
+ * To overwrite and send a hook even when ConLogInit is turned off.
+ * Have `ConLogWebhook()` set and `force-hook` in your message.
+ */
+ConLogWebhook(true, `discord`, `https://discord.com/api/webhooks/your-hook`)
+ConLog(`force-hook This message will be send to your discord webhook.`)
+
 // ================================
 // LOGGING EXAMPLES
 // ================================
@@ -127,7 +144,7 @@ const complexObject = [{
     timestamp: new Date().toISOString()
 }];
 
-/ Error logging - displayed in red
+// Error logging - displayed in red
 ConLog(`Example... Database connection failed.`, 1)
 ConLog(`Example... Invalid user credentials provided.`, `error`)
 

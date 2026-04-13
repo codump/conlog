@@ -1,6 +1,20 @@
 # Changelog
 All notable changes to this project will be documented in this file(hopefully).
 
+## `v2.1.1` 13th April 2026
+### Added
+- Timestamp added for everything except an object without type being set.
+- Webhook support to send your logs to for example discord.
+  - Supported hook providers: only discord for now, but let us know if you want another one to be added.
+  - It configures automatically to your `ConLogSet()` settings.
+  - To overwrite and send a hook even when ConLogInit is turned off. Have `ConLogWebhook()` set and `force-hook` in your message.
+
+Example:
+```js
+ConLogWebhook(true, 'discord', 'https://discord.com/api/webhooks/your-hook')
+ConLog('force-hook This message will be send to your discord webhook.')
+```
+
 ## `v2.0.8` 21th August 2025
 ### Fixed
 - Frontend start message coloring, try 2. 🤞
