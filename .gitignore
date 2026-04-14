@@ -5,6 +5,7 @@
 *.code-workspace
 local-ignore
 demo
+tutorials
 
 # JSDoc
 docs

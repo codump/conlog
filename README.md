@@ -59,7 +59,29 @@ Make sure the script where you are importing it has the module type.
  * In the repo example.js is set with require(`./lib/`) but copy paste the code below
  * when you use it after a `npm install @codump/conlog`
  */
-const { ConLogInit, ConLogSet, ConLogWebhook, ConLog, ConLogStartMsg } = require(`@codump/conlog`)
+
+// ================================
+// IMPORTS
+// ================================
+
+/**
+ * OPTION 1: Standard destructuring.
+ */
+const { ConLog, ConLogInit, ConLogSet, ConLogWebhook, ConLogStartMsg } = require('@codump/conlog')
+// Typing 'Con' + Enter results in: ConLog
+
+/**
+ * OPTION 2: Best for VS Code users.
+ * This approach forces IntelliSense to provide automatic parentheses () on Enter.
+ * It also inherits all JSDoc documentation from the library.
+ */
+const cl = require('@codump/conlog');
+const { ConLogInit, ConLogSet, ConLogWebhook, ConLogStartMsg } = cl
+/** @type {typeof cl.ConLog} */
+function ConLog(text, type) { 
+    return cl.ConLog(text, type)
+}
+// Typing 'Con' + Enter results in: ConLog()
 
 // ================================
 // INITIALIZATION

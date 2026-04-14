@@ -5,7 +5,14 @@
  * 
  * Replace this require statement with require(`@codump/conlog`) after installation or with usage
  */
-const { ConLogInit, ConLogSet, ConLogWebhook, ConLog, ConLogStartMsg } = require(`./lib/`)
+// This code is different then the one you need to use, check the READ me or Docs for the correct IMPORTS code.
+const { ConLogInit, ConLogSet, ConLogWebhook, ConLogStartMsg } = require(`./lib/`);
+/** @type {import('./lib/ConLog')} */
+function ConLog(text, type) { 
+    return require(`./lib/`).ConLog(text, type); 
+}
+// This code is different then the one you need to use, check the README or Docs for the correct IMPORTS code.
+
 
 // ================================
 // INITIALIZATION

@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file(hopefully).
 
+## `v2.1.2` 14th April 2026
+### Added
+- Re-declaring ConLog function to force VS Code IntelliSense to provide automatic parentheses() on Enter/Tab for easier use.
+
+
 ## `v2.1.1` 13th April 2026
 ### Added
 - Timestamp added for everything except an object without type being set.
